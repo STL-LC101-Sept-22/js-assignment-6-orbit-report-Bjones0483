@@ -14,12 +14,14 @@ export class Satellite {
 		this.operational = operational;
    }
 	
-	isSpaceDebris(): boolean {
+	shouldShowWarning(): boolean {
     if (this.type.toLowerCase() === 'space debris'){
       return true;
    } else {
      return false;
    }
+    zebraStripe(arr): boolean {
+      return arr.indexOf(this) % 2 === 0 && this.type.toLowerCase() !== 'space debris';
   }
 }
 
