@@ -8,7 +8,7 @@
     </tr>
     <tr *ngFor ="let satellite of satellites" [class.warning]="satellite.shouldShowWarning()" [class.stripe]="satellite.zebraStripe(satellites)">
         <td>{{satellite.name}}</td>
-        <td [class.warning]="satellite.shouldShowWarning()">{{satellite.type}}</td>
+        <td [class.warning]="list.shouldShowWarning()">{{list.type}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
