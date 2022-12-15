@@ -27,4 +27,7 @@ th, td {
 	padding: 6px;
 }
 
-
+.stripe {
+  background-color: #361002;
+  color: #04ff34;
+}
