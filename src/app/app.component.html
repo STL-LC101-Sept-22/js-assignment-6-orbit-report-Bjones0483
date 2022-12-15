@@ -2,7 +2,7 @@
 <h1>Orbit Report</h1>
 
 <div class="search-form">
-	Search: <input #searchTerm type="text" (keyup.enter)="search(searchTerm.value);" name="searchTerm"/>
+	Search: <input #searchTerm type="text" placeholder="Enter search term" (keyup.enter)="search(searchTerm.value);" name="searchTerm"/>
 	<button (click)="search(searchTerm.value);">Search</button>
 </div>
 
