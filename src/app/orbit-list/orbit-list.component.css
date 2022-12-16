@@ -26,3 +26,12 @@ th, td {
 	margin: 5px 10px;
 	padding: 6px;
 }
+
+isSpaceDebris {
+  background-color: #da8a8a;
+}
+
+
+tr:nth-child(even) {
+	background-color: #04ff34;
+}

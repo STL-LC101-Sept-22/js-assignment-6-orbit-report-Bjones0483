@@ -1,3 +1,5 @@
+import { logWarnings } from "protractor/built/driverProviders";
+
 export class Satellite {
 
 	name: string;
@@ -15,9 +17,11 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+    if (this.type.toLowerCase() === 'space debris'){
+      return true;
+   } else {
+     return false;
    }
-
+ }
 }
-
 // TODO 3a: fix isSpaceDebris check
